@@ -5,24 +5,24 @@ import './style.css';
 
 const Loading = () => {
   return (
-    <div class="loader fixed top-1/2 left-1/2  ">
-    <div class="circle">
-      <div class="dot"></div>
-      <div class="outline"></div>
-    </div>
-    <div class="circle">
-      <div class="dot"></div>
-      <div class="outline"></div>
-    </div>
-    <div class="circle">
-      <div class="dot"></div>
-      <div class="outline"></div>
-    </div>
-    <div class="circle">
-      <div class="dot"></div>
-      <div class="outline"></div>
-    </div>
+  <div class="fire">
+  <div class="fire-left">
+    <div class="main-fire"></div>
+    <div class="particle-fire"></div>
   </div>
+  <div class="fire-center">
+    <div class="main-fire"></div>
+    <div class="particle-fire"></div>
+  </div>
+  <div class="fire-right">
+    <div class="main-fire"></div>
+    <div class="particle-fire"></div>
+  </div>
+  <div class="fire-bottom">
+    <div class="main-fire"></div>
+  </div>
+</div>
+
   );
 };
 
