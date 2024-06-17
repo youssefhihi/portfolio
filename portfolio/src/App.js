@@ -1,5 +1,5 @@
 // src/App.js
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/home';
 import About from './pages/About';
@@ -11,16 +11,7 @@ import Icons from './component/icons';
 import './App.css'; 
 
 const App = () => {
-  const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    // Simulate a loading delay
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 3000); // Adjust the timeout as needed
-
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
     <div className="bg-black overflow-hidden min-h-screen text-white">
@@ -29,7 +20,7 @@ const App = () => {
           <>
             <Header />
             <Icons />
-            <div className="mt-10">
+            <div className="mt-10 mb-16">
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />

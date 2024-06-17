@@ -27,11 +27,11 @@ function Home() {
       {loading && (
        <Loading />
       )}
-      <div className={`flex flex-col lg:flex-row p-5 w-full bg-black text-white h-screen ${loading ? 'blur-xl	' : ''}`}>
+      <div className={`flex flex-col lg:flex-row p-5 w-full bg-black text-white lg:h-screen ${loading ? 'blur-xl	' : ''}`}>
               <Icons />
-      <div className="lg:flex-1 flex flex-col justify-center p-20 w-full">
+      <div className="lg:flex-1 flex flex-col justify-center p-10 lg:p-20 w-full">
         <div className="mb-8" style={{ fontFamily: 'cursive' }}>
-          <h2 className="text-4xl font-bold mb-4">I'm Youssef Hihi</h2>
+          <h2 className="text-4xl font-bold mb-4 ">I'm <span className='hover:text-[#3cff1e]'>Youssef Hihi</span></h2>
           <h3 className="text-2xl mb-4 font-serif">
             <Typewriter
               options={{
@@ -42,9 +42,9 @@ function Home() {
             />
           </h3>
           <p className="text-xl font-normal mb-8">
-          As a dedicated full-stack developer studying at YouCode Simplon - UP6P, I build dynamic and efficient web applications. In my free time, I enjoy playing football and traveling to new places.
+          As a dedicated full-stack developer studying at YouCode Simplon - UM6P, I build dynamic and efficient web applications.
           </p>
-          <div className="flex space-x-4">
+          <div className="flex space-x-4 justify-center md:justify-normal">
           <a href={CV} download >
               <button className="buttonCV">
               Download CV
@@ -53,8 +53,8 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="relative lg:w-1/2.5 p-6 flex justify-center items-center">
-        <img src={photo} alt="profile" className="w-full h-full object-fill rounded-2xl" />
+      <div className="hidden md:block relative lg:w-1/2.5 p-6 flex justify-center items-center">
+        <img src={photo} alt="profile" className="w-full h-full object-fill hover:shadow-2xl shadow-sm shadow-[#3cff1e] border-2 border-[#3cff1e] hover:shadow-[#3cff1e] duration-300 ease-in-out hover:scale-95 rounded-2xl" />
       </div>
     </div>
     </>

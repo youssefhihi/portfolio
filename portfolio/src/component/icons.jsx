@@ -1,12 +1,12 @@
 import React from 'react';
 import '../tailwind.css';
-import { FaLinkedinIn, FaFacebook, FaGithub, FaTwitter } from 'react-icons/fa';
+import { FaLinkedinIn, FaFacebook, FaGithub, FaTwitter,FaWhatsapp } from 'react-icons/fa';
 
 const socialProfiles = {
   facebook: "https://facebook.com",
-  github: "https://github.com",
-  twitter: "https://twitter.com",
-  linkedin: "https://twitter.com",
+  github: "https://github.com/youssefhihi",
+  whatsapp: "https://wa.me/+212648233165",
+  linkedin: "https://www.linkedin.com/in/youssef-hihi/",
 };
 function Icons() {
   return (
@@ -23,10 +23,10 @@ function Icons() {
       <a href={socialProfiles.github} target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
         <FaGithub size={19} />
       </a>
-      <a href={socialProfiles.github} target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
-        <FaTwitter size={19} />
+      <a href={socialProfiles.whatsapp} target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
+        <FaWhatsapp size={19} />
       </a>
-      <a href={socialProfiles.linked} target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
+      <a href={socialProfiles.linkedin} target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
       <FaLinkedinIn size={19} />
       </a>
       <div className=' ml-1.5 h-8 w-0 border border-white'></div>
